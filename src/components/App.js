@@ -1,32 +1,24 @@
-import React from "react";
+// src/components/App.js
+import React from 'react';
+import Navbar from './Navbar'; // Assuming Navbar is in the same directory
+import Home from './Home';     // Assuming Home is in the same directory
 
-function NavBar() {
-  return (
-    <nav>
-      <a href="#home">I'm a link!</a>
-    </nav>
-  );
+function About() {
+    return (
+        <div id="about">
+            <h2>About</h2>
+        </div>
+    );
 }
-
-function Home() {
-  return (
-    <div id="home">
-      <h1>Home</h1>
-    </div>
-  );
-}
-
-{/* write an <About> component here */}
-
 
 function App() {
-  return (
-    <div>
-      <NavBar />
-      {/* add the <Home> component here */}
-      {/* add your <About> component here */}
-    </div>
-  );
+    return (
+        <div>
+            <Navbar />
+            <Home />
+            <About /> {/* Add the About component here */}
+        </div>
+    );
 }
 
 export default App;
